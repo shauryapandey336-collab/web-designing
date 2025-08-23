@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* sabhi me border lane ki liye */
+        table,tr,td,th{
+            border: 1px solid;
+            width: 800px;
+            height: 40px;
+            margin-top: 100px;
+            text-align: center;
+            /* collapse se border double line hat gayi  */
+            border-collapse: collapse;
+
+        }
+        /* jaha move koroge curser waha yello color show hoga  */
+        tr:hover{
+            background: yellow;
+        }
+        /* same for heading  */
+        th:hover{
+            background: green;
+        }
+        td:hover{
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+   <center>
+     <table>
+        <!-- colnsapn use hota hai heading ko number ke according bich me lane ke lie -->
+        <th colspan="5">Display data</th>
+        <!-- tr-table row, th=table heading -->
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>mail</th>
+            <th>phone</th>
+            <th>action</th>
+        </tr>
+        <td>1</td>
+        <td>ram</td>
+        <td>ram@gmail.com</td>
+        <td>8723363223</td>
+        <td>
+            <a href="" style="text-decoration: none;">view</a>
+            <a href="" style="text-decoration: none;">edit</a>
+            <a href="" style="text-decoration: none;">delete</a>
+        </td>
+    </table>
+   </center>
+</body>
+</html>

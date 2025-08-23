@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="" value="Registration form " readonly>
+        <br><br>
+        <!-- type jo fix hoga wahi data dalenege placeholder me entry column ki entity hogi aur sabse pahle data name='isme jega' required means you have to compulsory to enter   -->
+        <label>Name:</label>
+        <input type="text" name="n" placeholder="Enter Name" required>
+        <br><br>
+        <label>Email:</label>
+        <input type="email" name="e" placeholder="Enter email" required>
+        <br><br>
+        <label>password</label>
+        <input type="password" name="p" placeholder="Enter password" required>
+        <br><br>
+        <label>Phone:</label>
+        <input type="number" name="phone" required>
+        <br><br>
+        <!-- type me date dene se calender aajega  -->
+        <label>D.O.B</label>
+        <input type="date" name="date" required>
+        <br><br>
+        <!-- radio is used for button and value means restriction to choose and stored in male name ka dabba same rhega taki ek baar me ek hi select ho paye -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required>male
+        <input type="radio" name="gender" value="Female" required>Female
+        <input type="radio" name="gender" value="other" required>Other
+        <br><br>
+        <label>collge</label>
+        <!-- for getting multiple option to select one option -->
+        <select name="collge">
+            <option value="">select collge</option>
+            <option value="itm">itm</option>
+            <option value="rjit">rjit</option>
+            <option value="prstige">prestige</option>
+        </select>
+        <br><br>
+        <!-- checbox is basically slect multiple thing at a time  -->
+        <label>Education</label>
+        <input type="checkbox" name="Education" value="10">10th
+          <input type="checkbox" name="Education" value="12">12th
+            <input type="checkbox" name="Education" value="Graduation">Graduation
+            <br><br>
+            <label>Address</label>
+            <!-- text area is basicaaly used to write  -->
+            <textarea name="address" id=""></textarea>
+            <br><br>
+
+            <label >Image</label>
+            <input type="file" name="image">
+            <br><br>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
