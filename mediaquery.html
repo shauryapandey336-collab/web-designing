@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            background: black;
+            color: white;
+            height: 300px;
+            font-size: 70px;
+        }
+        @media(max-width:768px){
+            .a{
+                background: red;
+                text-align: center;
+                color: blue;
+            }
+        }
+          @media(max-width:600px){
+            /* basically here we fix chnage at a particular dimension  */
+            .a{
+                background: blue;
+                text-align: center;
+                color: antiquewhite;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<!-- media query is used to make responsive the website  -->
+<body>
+    <div class="a">
+        <h2>hello gwalior</h2>
+
+    </div>
+</body>
+</html>
