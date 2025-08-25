@@ -33,21 +33,23 @@ nav {
     background-size: cover;
     padding: 0 100px;
 }
-.news{
-    background:#f94b89;
+
+.news {
+    background: #f94b89;
     width: 100%;
     height: 50px;
-    background: linear-gradient(to left,green,blue,red);
+    background: linear-gradient(to left, green, blue, red);
     motion: left;
-    
-}
-.news marquee{
-    color: white;
-    font-size: 30px;
-    line-height: 50px;  
+
 }
 
-   .banner h1 {
+.news marquee {
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.banner h1 {
     text-align: center;
     border: yellowgreen;
     margin: auto;
@@ -59,27 +61,30 @@ nav {
     top: 83px;
 }
 
-.about{
+.about {
     padding: 150px 200px;
     text-align: center;
     background: url(/image/resturant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.about h2{
+
+.about h2 {
     text-transform: capitalize;
     font-size: 30px;
     margin-bottom: 10px;
-    text-shadow:3px 3px 3px red;
+    text-shadow: 3px 3px 3px red;
 }
-.about p{     
+
+.about p {
     line-height: 25px;
     letter-spacing: 1px;
     word-spacing: 10px;
     margin-bottom: 10px;
 }
-.about button{
+
+.about button {
     width: 215px;
     height: 42px;
     background: #f94b89;
@@ -87,34 +92,38 @@ nav {
     border: none;
     border-radius: 10px;
 }
+
 /* team css */
-.team{
+.team {
     padding: 150px 200px;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7)),url(/image/resturant.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url(/image/resturant.jpg);
     /* background: rgba(0,0,0,0.7); */
     /* background: url(/image/resturant.jpg); */
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    
 
-    
+
+
 
 }
-.team h2{
+
+.team h2 {
     text-transform: capitalize;
     font-size: 30px;
     margin-bottom: 10px;
-    text-shadow:3px 3px 3px red;
+    text-shadow: 3px 3px 3px red;
 }
-.team p{     
+
+.team p {
     line-height: 25px;
     letter-spacing: 1px;
     word-spacing: 10px;
     margin-bottom: 10px;
 }
-.team button{
+
+.team button {
     width: 215px;
     height: 42px;
     background: #f94b89;
@@ -122,31 +131,35 @@ nav {
     border: none;
     border-radius: 10px;
 }
+
 /* contact css */
-.contact{
+.contact {
     padding: 150px 200px;
     text-align: center;
     background: url(/image/resturant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* to combine two colors combination  */
-    background: linear-gradient(to right,yellowgreen,black);
+    background: linear-gradient(to right, yellowgreen, black);
     color: white;
-    
+
 }
-.contact h2{
+
+.contact h2 {
     text-transform: capitalize;
     font-size: 30px;
     margin-bottom: 10px;
-    text-shadow:3px 3px 3px red;
+    text-shadow: 3px 3px 3px red;
 }
-.contact p{     
+
+.contact p {
     line-height: 25px;
     letter-spacing: 1px;
     word-spacing: 10px;
     margin-bottom: 10px;
 }
-.contact button{
+
+.contact button {
     width: 215px;
     height: 42px;
     background: #f94b89;
@@ -154,15 +167,17 @@ nav {
     border: none;
     border-radius: 10px;
 }
+
 /* footer start  */
-footer{
+footer {
     background: white;
     padding: 20px 0;
-    height: 350px; 
+    height: 350px;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -173,10 +188,11 @@ footer{
 
 }
 
-.footer-logo img{
+.footer-logo img {
     width: 120px;
 }
-.Footer-link a{
+
+.Footer-link a {
     display: block;
     color: #555;
     text-decoration: none;
@@ -184,21 +200,24 @@ footer{
     text-align: center;
     transition: color 0.3s;
 }
+
 /* do class ek sath  */
 .footer-links,
-.footer-contact h3{
+.footer-contact h3 {
     margin-bottom: 10px;
     color: #333;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     color: red;
 }
-.footer-contact p{
+
+.footer-contact p {
     margin: 5px 0;
     color: #555;
 }
-.footer-bottom{
+
+.footer-bottom {
     text-align: center;
     margin-top: 15px;
     color: #555;
@@ -206,5 +225,49 @@ footer{
     font-size: 15px;
 }
 
+/* responsive design using media query  */
+/* for tablets (max width 992px ) */
+@media(max-width:992px) {
+    nav {
+        padding: 0 40px;
+    }
 
+    .banner h1 {
+        font-size: 40px;
+        width: 70%;
+    }
 
+    .about,
+    .team,
+    .contact {
+        padding: 80px 50px;
+    }
+}
+
+/* mobile view (max weight:768px)  */
+@media(max-width:768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+        width: 90%;
+    }
+    /* for very small view screen (max width 480px)  */
+    @media(max-width: 480px){
+        .banner h1{
+            font-size: 22px;
+            padding: 10px;
+        }
+    .about h2,.team h2,.contact h2{
+        font-size: 22px;
+    }
+    }
+}
