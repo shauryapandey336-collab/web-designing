@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    position: fixed;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-transform: capitalize;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.banner {
+    background: url(https://pninfosys.org/bannerFinal.jpg);
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.banner .banner1text{
+    width: 40%;
+    height: 100%;
+    background: rgb(93, 93, 223);
+}
